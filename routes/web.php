@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('login');
+})->name('view.login');
+
+Route::get('/register',function (){
+    return view('auth.register');
 });
 
 Route::get('/dashboard', function () {
